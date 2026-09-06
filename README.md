@@ -1,4 +1,4 @@
-Gnomicon
+# Gnomicon
 
 Do you hate GNOME? So do I! This is a fairly simple mod that automatically adds a desktop entry for Minecraft so that it has an icon in the dash.
 
