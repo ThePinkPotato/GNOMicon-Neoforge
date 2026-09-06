@@ -16,8 +16,8 @@ public class GNOMiconConfig {
     public static Boolean generateDesktopEntry;
 
     private static final Path configPath = Path.of(FMLPaths.CONFIGDIR.get() + "/gnomicon");
-    public static final Path jsonPath = Path.of(configPath + "/gnomicon.json");
-    public static final Path iconPath = Path.of(configPath + "/icon.png");
+    private static final Path jsonPath = Path.of(configPath + "/gnomicon.json");
+    private static final Path iconPath = Path.of(configPath + "/icon.png");
 
     public static void createConfig() {
         try {

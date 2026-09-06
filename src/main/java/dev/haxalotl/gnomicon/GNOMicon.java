@@ -42,7 +42,7 @@ public class GNOMicon {
                             "#!/usr/bin/env xdg-open\n\n" +
                                     "[Desktop Entry]\n" +
                                     "Type=Application\n" +
-                                    "Icon=" + GNOMiconConfig.iconPath + "\n" +
+                                    "Icon=" + FMLPaths.CONFIGDIR.get() + GNOMiconConfig.iconName + "\n" +
                                     "StartupWMClass=" + GNOMiconConfig.windowName
                     );
                     LOGGER.info("Desktop file has been created");
