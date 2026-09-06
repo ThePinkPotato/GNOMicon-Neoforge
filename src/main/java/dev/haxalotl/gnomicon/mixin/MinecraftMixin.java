@@ -4,6 +4,7 @@ import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import dev.haxalotl.gnomicon.GNOMicon;
 import dev.haxalotl.gnomicon.GNOMiconConfig;
 import net.minecraft.client.Minecraft;
+import net.neoforged.fml.loading.FMLConfig;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 
@@ -15,6 +16,7 @@ public class MinecraftMixin {
         GNOMiconConfig.readConfig();
         if (GNOMiconConfig.generateDesktopEntry) {
             GNOMicon.createDesktopEntry();
+            FMLConfig.updateConfig(FMLConfig.ConfigValue.EARLY_WINDOW_CONTROL, false);
         }
         return GNOMiconConfig.windowName != null ? GNOMiconConfig.windowName : original ;
     }
